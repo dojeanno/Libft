@@ -6,7 +6,7 @@
 /*   By: dojeanno <dojeanno@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/13 11:13:18 by dojeanno          #+#    #+#             */
-/*   Updated: 2023/02/13 12:14:03 by dojeanno         ###   ########.fr       */
+/*   Updated: 2023/02/14 16:51:15 by dojeanno         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,3 +27,4 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	dst = destination;
 	return (dst);
 }
+// to fix
