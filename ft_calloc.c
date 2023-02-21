@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dojeanno <dojeanno@student.42.fr>          +#+  +:+       +#+        */
+/*   By: dojeanno <dojeanno@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/14 15:42:29 by dojeanno          #+#    #+#             */
-/*   Updated: 2023/02/14 16:01:14 by dojeanno         ###   ########.fr       */
+/*   Updated: 2023/02/20 19:15:45 by dojeanno         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,12 +15,10 @@
 void	*ft_calloc(size_t count, size_t size)
 {
 	char	*ptr;
-	int		i;
 
-	i = 0;
 	ptr = malloc(size * count);
-	while (i < (int)(size * count))
-		ptr[i] = '\0';
+	if (ptr == NULL)
+		return (0);
+	ft_bzero(ptr, (count * size));
 	return ((void *)ptr);
 }
-// to fix

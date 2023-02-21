@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dojeanno <dojeanno@student.42.fr>          +#+  +:+       +#+        */
+/*   By: dojeanno <dojeanno@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/13 09:29:17 by dojeanno          #+#    #+#             */
-/*   Updated: 2023/02/14 18:05:45 by dojeanno         ###   ########.fr       */
+/*   Updated: 2023/02/20 19:06:10 by dojeanno         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,9 +37,4 @@ char	*ft_strchr(const char *s, int c);
 char	*ft_strrchr(const char *s, int c);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
 void	*ft_memchr(const void *s, int c, size_t n);
-
-
-
-
-
 #endif

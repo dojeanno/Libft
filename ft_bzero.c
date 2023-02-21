@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dojeanno <dojeanno@student.42.fr>          +#+  +:+       +#+        */
+/*   By: dojeanno <dojeanno@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/13 10:53:10 by dojeanno          #+#    #+#             */
-/*   Updated: 2023/02/14 15:41:55 by dojeanno         ###   ########.fr       */
+/*   Updated: 2023/02/20 19:05:54 by dojeanno         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,17 +14,9 @@
 
 void	ft_bzero(void *s, size_t n)
 {
-	size_t	i;
-	char	*str;
+	unsigned char	*p;
 
-	if (n == 0)
-		return ;
-	str = s;
-	i = 0;
-	while (i < n)
-	{
-		str[i] = 0;
-		i++;
-	}
-	s = str;
+	p = s;
+	while (n-- > 0)
+		*p++ = 0;
 }
