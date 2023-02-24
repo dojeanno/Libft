@@ -6,7 +6,7 @@
 #    By: dojeanno <dojeanno@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/02/14 13:11:26 by dojeanno          #+#    #+#              #
-#    Updated: 2023/02/24 17:19:36 by dojeanno         ###   ########.fr        #
+#    Updated: 2023/02/24 17:38:26 by dojeanno         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -39,7 +39,8 @@ SRCS		=	ft_isalpha.c\
 				ft_memchr.c\
 				ft_strnstr.c\
 				ft_strlcpy.c\
-				ft_memmove.c
+				ft_memmove.c\
+				ft_substr.c
 
 OBJS		=	$(SRCS:.c=.o)
 

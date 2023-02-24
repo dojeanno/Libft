@@ -6,7 +6,7 @@
 /*   By: dojeanno <dojeanno@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/13 09:29:17 by dojeanno          #+#    #+#             */
-/*   Updated: 2023/02/24 17:20:15 by dojeanno         ###   ########.fr       */
+/*   Updated: 2023/02/24 17:38:33 by dojeanno         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,6 +40,8 @@ void	*ft_memchr(const void *s, int c, size_t n);
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
 //int		ft_memcmp(const void *s1, const void *s2, size_t n);
 // size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize);
+char	*ft_substr(char const *s, unsigned int start, size_t len);
+
 
 
 
