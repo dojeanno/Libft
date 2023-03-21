@@ -6,7 +6,7 @@
 #    By: dojeanno <dojeanno@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/02/14 13:11:26 by dojeanno          #+#    #+#              #
-#    Updated: 2023/03/20 14:04:37 by dojeanno         ###   ########.fr        #
+#    Updated: 2023/03/21 10:54:33 by dojeanno         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -50,6 +50,10 @@ SRCS		=	ft_isalpha.c\
 				ft_putendl_fd.c\
 				ft_putnbr_fd.c\
 				ft_strmapi.c\
+				ft_striteri.c\
+				ft_strlcat.c\
+				ft_split.c\
+				ft_itoa.c\
 
 OBJS		=	$(SRCS:.c=.o)
 
