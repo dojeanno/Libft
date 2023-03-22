@@ -6,7 +6,7 @@
 /*   By: dojeanno <dojeanno@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/21 15:41:54 by dojeanno          #+#    #+#             */
-/*   Updated: 2023/02/24 15:49:38 by dojeanno         ###   ########.fr       */
+/*   Updated: 2023/03/22 16:57:52 by dojeanno         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	size_t	i;
 	size_t	j;
 
+	if (!haystack)
+		return (NULL);
 	if (ft_strlen(needle) == 0)
 		return ((char *)haystack);
 	i = 0;

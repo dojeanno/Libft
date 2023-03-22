@@ -6,7 +6,7 @@
 /*   By: dojeanno <dojeanno@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/14 16:40:28 by dojeanno          #+#    #+#             */
-/*   Updated: 2023/02/14 18:08:52 by dojeanno         ###   ########.fr       */
+/*   Updated: 2023/03/22 16:26:52 by dojeanno         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ char	*ft_strrchr(const char *s, int c)
 	char	*str;
 	int		i;
 
+	if (!s)
+		return (NULL);
 	str = (char *)s;
 	i = (int)ft_strlen(str);
 	while (i > 0)

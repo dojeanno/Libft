@@ -6,7 +6,7 @@
 /*   By: dojeanno <dojeanno@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/02 17:00:11 by dojeanno          #+#    #+#             */
-/*   Updated: 2023/03/21 13:09:09 by dojeanno         ###   ########.fr       */
+/*   Updated: 2023/03/22 17:06:05 by dojeanno         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,6 +59,15 @@ char	**ft_split(char const *s, char c)
 	while (j < wordscount(s, c))
 	{
 		str[j] = splitter(s, c, &i);
+		if (str[j] == NULL)
+		{
+			while (j >= 0)
+			{
+				free (str[j]);
+				j--;
+			}
+			free (str);
+		}
 		j++;
 	}
 	return (str);

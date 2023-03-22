@@ -6,7 +6,7 @@
 /*   By: dojeanno <dojeanno@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/13 12:46:39 by dojeanno          #+#    #+#             */
-/*   Updated: 2023/02/14 15:19:31 by dojeanno         ###   ########.fr       */
+/*   Updated: 2023/03/22 16:57:12 by dojeanno         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ int	ft_atoi(const char *str)
 	int	neg;
 	int	i;
 
+	if (!str)
+		return (0);
 	nb = 0;
 	neg = 1;
 	i = 0;

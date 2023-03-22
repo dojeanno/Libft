@@ -6,7 +6,7 @@
 /*   By: dojeanno <dojeanno@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/24 16:04:17 by dojeanno          #+#    #+#             */
-/*   Updated: 2023/03/02 13:29:19 by dojeanno         ###   ########.fr       */
+/*   Updated: 2023/03/22 16:57:39 by dojeanno         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
 	size_t	i;
 
+	if (!dst || !src)
+		return (0);
 	if (dstsize != 0)
 	{
 		i = 0;

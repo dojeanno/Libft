@@ -6,7 +6,7 @@
 /*   By: dojeanno <dojeanno@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/13 11:58:19 by dojeanno          #+#    #+#             */
-/*   Updated: 2023/02/24 17:26:28 by dojeanno         ###   ########.fr       */
+/*   Updated: 2023/03/22 16:50:54 by dojeanno         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	char	*source;
 	size_t	i;
 
-	if (dst == NULL && src == NULL)
+	if (dst == NULL || src == NULL)
 		return (NULL);
 	i = 0;
 	destination = (char *)dst;

@@ -6,7 +6,7 @@
 /*   By: dojeanno <dojeanno@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/13 10:40:26 by dojeanno          #+#    #+#             */
-/*   Updated: 2023/02/13 12:14:38 by dojeanno         ###   ########.fr       */
+/*   Updated: 2023/03/22 16:50:13 by dojeanno         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ void	*ft_memset(void *b, int c, size_t len)
 	size_t	i;
 	char	*s;
 
+	if (!b)
+		return (NULL);
 	s = b;
 	i = 0;
 	while (i < len)
