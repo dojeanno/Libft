@@ -6,7 +6,7 @@
 /*   By: dojeanno <dojeanno@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/24 18:18:51 by dojeanno          #+#    #+#             */
-/*   Updated: 2023/03/22 17:44:43 by dojeanno         ###   ########.fr       */
+/*   Updated: 2023/03/22 18:03:02 by dojeanno         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,26 +15,17 @@
 char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char	*str;
-	int		i;
-	int		j;
+	int		s1len;
+	int		s2len;
 
 	if (!s1 || !s2)
 		return (NULL);
-	str = ft_calloc(sizeof(char), (ft_strlen(s1) + ft_strlen(s2) + 1));
+	s1len = (int)ft_strlen(s1);
+	s2len = (int)ft_strlen(s2);
+	str = ft_calloc(sizeof(char), (s1len + s2len + 1));
 	if (str == NULL)
 		return (NULL);
-	i = 0;
-	while (s1[i])
-	{
-		str[i] = s1[i];
-		i++;
-	}
-	j = 0;
-	while (s2[j])
-	{
-		str[i] = s2[j];
-		i++;
-		j++;
-	}
+	ft_memcpy(str, s1, ft_strlen(s1));
+	ft_memcpy(str + s1len, s2, ft_strlen(s2));
 	return (str);
 }
