@@ -6,7 +6,7 @@
 #    By: dojeanno <dojeanno@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/02/14 13:11:26 by dojeanno          #+#    #+#              #
-#    Updated: 2023/03/21 10:54:33 by dojeanno         ###   ########.fr        #
+#    Updated: 2023/03/24 17:30:45 by dojeanno         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -57,7 +57,15 @@ SRCS		=	ft_isalpha.c\
 
 OBJS		=	$(SRCS:.c=.o)
 
-SRCS_BONUS	=	
+SRCS_BONUS	=	ft_lstsize.c\
+				ft_lstnew.c\
+				ft_lstadd_front.c\
+				ft_lstlast.c\
+				ft_lstadd_back.c\
+				ft_lstdelone.c\
+				ft_lstclear.c\
+				ft_lstiter.c\
+
 
 
 OBJS_BONUS	=	$(SRCS_BONUS:.c=.o)

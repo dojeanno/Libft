@@ -6,7 +6,7 @@
 /*   By: dojeanno <dojeanno@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/02 17:00:11 by dojeanno          #+#    #+#             */
-/*   Updated: 2023/03/22 17:06:05 by dojeanno         ###   ########.fr       */
+/*   Updated: 2023/03/24 15:27:40 by dojeanno         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,6 +67,7 @@ char	**ft_split(char const *s, char c)
 				j--;
 			}
 			free (str);
+			return (NULL);
 		}
 		j++;
 	}
