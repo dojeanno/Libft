@@ -6,7 +6,7 @@
 #    By: dojeanno <dojeanno@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/02/14 13:11:26 by dojeanno          #+#    #+#              #
-#    Updated: 2023/03/24 17:30:45 by dojeanno         ###   ########.fr        #
+#    Updated: 2023/03/28 16:00:30 by dojeanno         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -65,9 +65,7 @@ SRCS_BONUS	=	ft_lstsize.c\
 				ft_lstdelone.c\
 				ft_lstclear.c\
 				ft_lstiter.c\
-
-
-
+				
 OBJS_BONUS	=	$(SRCS_BONUS:.c=.o)
 
 all :		$(NAME)

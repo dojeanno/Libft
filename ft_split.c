@@ -6,7 +6,7 @@
 /*   By: dojeanno <dojeanno@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/02 17:00:11 by dojeanno          #+#    #+#             */
-/*   Updated: 2023/03/24 15:27:40 by dojeanno         ###   ########.fr       */
+/*   Updated: 2023/03/28 18:33:06 by dojeanno         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ static int	wordscount(char const *s, char c)
 	int	i;
 	int	words;
 
+	if (!s)
+		return (0);
 	words = 0;
 	i = 0;
 	while (s[i])
