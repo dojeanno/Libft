@@ -6,7 +6,7 @@
 #    By: dojeanno <dojeanno@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/02/14 13:11:26 by dojeanno          #+#    #+#              #
-#    Updated: 2023/03/28 16:00:30 by dojeanno         ###   ########.fr        #
+#    Updated: 2023/03/29 13:27:04 by dojeanno         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,7 +18,7 @@ CFLAGS		=	-Wall -Wextra -Werror
 
 RM			=	rm -rf
 
-LIB			=	ar rcs
+LIB			=	@ar rcs
 
 SRCS		=	ft_isalpha.c\
 				ft_isdigit.c\
@@ -68,19 +68,26 @@ SRCS_BONUS	=	ft_lstsize.c\
 				
 OBJS_BONUS	=	$(SRCS_BONUS:.c=.o)
 
+ifdef WITH_BONUS	
+OBJS_LIST = $(OBJS) $(OBJS_BONUS)
+else
+OBJS_LIST = $(OBJS)
+endif
+
 all :		$(NAME)
 	
-$(NAME):	$(OBJS)
-			$(LIB) $(NAME) $(OBJS)
-
-bonus :		$(OBJS) $(OBJS_BONUS)
-			$(LIB) $(NAME) $(OBJS) $(OBJS_BONUS)
-
+$(NAME):	$(OBJS_LIST)
+			$(LIB) $(NAME) $(OBJS_LIST)
+		
+bonus :		
+			@make WITH_BONUS=1 all
+		
 clean :		
 			$(RM) $(OBJS) $(OBJS_BONUS)
-
+			
 fclean :	clean
 			$(RM) $(NAME)
+			
 re :		fclean all
 
 .PHONY :	all bonus clean fclean re
