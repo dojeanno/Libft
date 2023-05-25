@@ -6,7 +6,7 @@
 #    By: dojeanno <dojeanno@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/02/14 13:11:26 by dojeanno          #+#    #+#              #
-#    Updated: 2023/03/29 13:27:04 by dojeanno         ###   ########.fr        #
+#    Updated: 2023/05/25 12:13:29 by dojeanno         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -54,6 +54,8 @@ SRCS		=	ft_isalpha.c\
 				ft_strlcat.c\
 				ft_split.c\
 				ft_itoa.c\
+				GNL/get_next_line.c\
+				GNL/get_next_line_utils.c
 
 OBJS		=	$(SRCS:.c=.o)
 

@@ -6,7 +6,7 @@
 /*   By: dojeanno <dojeanno@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/13 09:29:17 by dojeanno          #+#    #+#             */
-/*   Updated: 2023/03/24 17:30:51 by dojeanno         ###   ########.fr       */
+/*   Updated: 2023/05/25 12:24:00 by dojeanno         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,8 @@
 
 # include <unistd.h>
 # include <stdlib.h>
+# include "GNL/get_next_line.h"
+# include <fcntl.h>
 
 typedef struct s_list
 {
